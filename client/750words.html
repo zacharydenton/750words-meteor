@@ -1,0 +1,29 @@
+<head>
+	<title>750words</title>
+	<script type="text/javascript" src="/epiceditor/js/epiceditor.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				{{> count}}
+			</div>
+			<div class="span9">
+				{{> editor}}
+			</div>
+		</div>
+	</div>
+</body>
+
+<template name="editor">
+<div id="epiceditor"></div>
+</template>
+
+<template name="count">
+{{#if finished }}
+<h2>You have written {{ count }} words. Nice!</h2>
+{{else}}
+<h2>You have written {{ count }} words so far.</h2>
+{{/if}}
+</template>
