@@ -1,3 +1,10 @@
+wordCount = (str) ->
+  words = str.match(/\S+/g)
+  if words?
+    words.length
+  else
+    0
+
 Template.count.count = ->
   Session.get('wordcount') || 0
 
@@ -14,6 +21,6 @@ Template.editor.rendered = ->
       preview: '/themes/preview/svbtle.css'
   ).load()
   editor.on 'update', ->
-    Session.set 'wordcount', $(editor.getElement('editor')).text().split(/\s+/).length
-  Session.set 'wordcount', $(editor.getElement('editor')).text().split(/\s+/).length
+    Session.set 'wordcount', wordCount($(editor.getElement('editor')).text())
+  Session.set 'wordcount', wordCount($(editor.getElement('editor')).text())
   window.editor = editor
