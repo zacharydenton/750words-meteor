@@ -306,7 +306,7 @@
 
     self.settings = _mergeObjs(true, defaults, opts);
 
-    if (!(typeof self.settings.parser == 'function' && typeof self.settings.parser('TEST') == 'string')) {
+    if (!(typeof self.settings.parser == 'function')) {
       self.settings.parser = function (str) {
         return str;
       }
@@ -906,7 +906,9 @@
     }
     
     // Add the generated HTML into the previewer
-    self.previewer.innerHTML = self.exportFile(null, 'html');
+    var previewHTML = self.exportFile(null, 'html');
+    if (previewHTML)
+      self.previewer.innerHTML = previewHTML;
     
     // Hide the editor and display the previewer
     if (!self.eeState.fullscreen) {
