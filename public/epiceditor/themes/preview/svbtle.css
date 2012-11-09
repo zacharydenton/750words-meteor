@@ -1,0 +1,108 @@
+html { padding: 10px; }
+
+body {
+  margin:0;
+  padding:0;
+  background:#fff;
+  color: #222;
+}
+
+#epiceditor-wrapper{
+  background:white;
+}
+
+#epiceditor-preview{
+  font-family: 'Rosario', Helvetica, sans-serif;
+  line-height: 1.5em;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#epiceditor-preview>*:first-child{
+  margin-top:0!important;
+}
+
+#epiceditor-preview>*:last-child{
+  margin-bottom:0!important;
+}
+
+#epiceditor-preview a{
+  color:#4183C4;
+  text-decoration:none;
+}
+
+#epiceditor-preview a:hover{
+  text-decoration:underline;
+}
+
+#epiceditor-preview h1,
+#epiceditor-preview h2,
+#epiceditor-preview h3,
+#epiceditor-preview h4,
+#epiceditor-preview h5,
+#epiceditor-preview h6{
+  font-weight: 900;
+  word-wrap: break-word;
+  line-height: 1.3em;
+  color: #222;
+}
+
+#epiceditor-preview h1 tt,
+#epiceditor-preview h1 code,
+#epiceditor-preview h2 tt,
+#epiceditor-preview h2 code,
+#epiceditor-preview h3 tt,
+#epiceditor-preview h3 code,
+#epiceditor-preview h4 tt,
+#epiceditor-preview h4 code,
+#epiceditor-preview h5 tt,
+#epiceditor-preview h5 code,
+#epiceditor-preview h6 tt,
+#epiceditor-preview h6 code{
+  font-size:inherit;
+}
+
+#epiceditor-preview h1{
+  font-size: 35px;
+}
+
+#epiceditor-preview ul,
+#epiceditor-preview ol {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+#epiceditor-preview blockquote {
+  margin: 0;
+  padding-left: 15px;
+  border-left: 7px solid #a3a3a3;
+}
+
+#epiceditor-preview p {
+  color: #333;
+}
+
+#epiceditor-preview > * {
+  margin: 0 0 20px 0;
+}
+
+#epiceditor-preview h2{
+  font-size: 1.5em;
+}
+
+#epiceditor-preview h3{
+  font-size: 1.2em;
+}
+
+#epiceditor-preview hr{
+  background:transparent url('../../images/modules/pulls/dirty-shade.png') repeat-x 0 0;
+  border:0 none;
+  color:#ccc;
+  height:4px;
+  padding:0;
+}
+
+#epiceditor-preview img{
+  max-width:100%;
+}
+
